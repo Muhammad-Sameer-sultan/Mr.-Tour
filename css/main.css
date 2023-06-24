@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&family=Roboto&display=swap");
+
+
+
+
+:root{
+    --color-main: #383D93;
+    --color-title: #2D3134;
+    --color-primary: #FFFFFF;
+    --color-yellow: #DEF587;
+    --color-orange: #FE7600;
+    --color-light-black:#F6F7FB;
+    --font-secondary: 'Roboto', sans-serif;
+    --font-primary: 'Eczar', serif;
+
+
+    }
+    *{
+        padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+  font-size: 90%;
+}
+
+header {
+  
+  width: 100%;
+  height: 100vh;
+}
+header nav .icon-container {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+header nav .icon-container h6 {
+  color: black;
+  text-decoration: underline;
+  margin: 1rem;
+}
+header .navbar-brand {
+    color:var(--color-title);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Eczar", serif;
+  }
+.nav-inner{
+    border-bottom: 1px solid var(--color-light-black);
+}
+  header .navbar-nav  {
+  font-size: 1rem;
+  font-family: var(--font-secondary);
+  margin-right: 5rem;
+}
+header .navbar-nav .active{
+    border-bottom: 2px solid var(--color-orange);
+}
+header .navbar-nav .nav-link{
+    margin-right: 1.5rem;
+} 
+header .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid var(--color-orange);
+}
+
+.navbar-collapse .sign{
+    background: var(--color-main);
+    color: var(--color-light-black);
+    font-family: var(--font-secondary);
+}
+.navbar-collapse .sign:hover{
+    background: var(--color-orange);
+    color: var(--color-light-black);
+}
+
+.landing-container{
+    margin-top: 2rem;
+}
+.inner-head{
+    width: 100%;
+    /* background: fuchsia; */
+}
+
+.inner-head .discover{
+    width: 30%;
+}
+.inner-head .aside{
+    width: 40%;
+}
+.discover{
+    position: relative;
+}
+.discover .circle-i{
+    position: absolute;
+    top: 8rem;
+    left: 31rem;
+}
+.discover .card-i{
+    position: absolute;
+    top: 4rem;
+    left: 55rem;
+}
+.discover-now-container .discover-btn{
+    background: var(--color-main);
+    color: var(--color-primary);
+}
+.discover-now-container .phone-icon{
+    background: var(--color-orange);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    padding: 1.2rem;
+}
+.discover-now-container .phone-icon i{
+    color: rebeccapurple;
+    background: var(--color-light-black);
+    border-radius: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.aside{
+    /* background: indianred; */
+}
+.image-container{
+    /* background: var(--color-yellow); */
+  
+    
+}
+.image-container img{
+    width: 250px    ;
+    height: 300px;
+}
+
+.inner-foot{
+    /* background: var(--color-title); */
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.foot-content button{
+    background: var(--color-main);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--color-light-black);
+}
+.foot-content .location i{
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: var(--color-main);
+    border: 1px solid var(--color-main);
+    border-radius: 1rem;
+}
+.foot-icon h4{
+    color: var(--color-main);
+}
+
+
+.bg {
+    background: #A0E7E5;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .main-box {
+    width: 80%;
+    height: 80%;
+    opacity: 0.9;
+  }
+  .main .main-box #signup-box {
+    font-size: 0.8em;
+  }
+  .main .main-box #signup-box h2 {
+    font-size: 2rem;
+  }
+  .main .main-box .title-box {
+    background: #81e496;
+    padding: 2rem 4rem;
+    text-align: center;
+  }
+  .main .main-box .title-box h2, .main .main-box .title-box h4 {
+    font-family: "Eczar", serif;
+    font-size: 3.5rem;
+  }
+  .main .main-box .title-box h4 {
+    font-size: 2.7rem;
+  }
+  .main .main-box .title-box p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+  }
+  .main .main-box .title-box #signp-title h2 {
+    font-size: 2rem;
+  }
+  .main .main-box .title-box #signp-title h4 {
+    font-size: 1rem;
+  }
+  .main .main-box .title-box #signp-title p {
+    font-size: 1rem;
+  }
+  .main .main-box .form-box {
+    background: #B4F8C8;
+    padding: 2rem 4rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+  }
+  .main .main-box .form-box h2 {
+    font-family: "Eczar", serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .main .main-box .form-box .forget {
+    cursor: pointer;
+    color: #0ee73d;
+    letter-spacing: 0.3rem;
+    text-decoration: underline;
+  }
+  .main .main-box .form-box .btn {
+    font-size: 1.4rem;
+  }
+  .main .main-box .form-box .signup_click span {
+    color: #0ee73d;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .main .main-box .form-box #signup-btn {
+    width: 100%;
+    border-radius: 3rem;
+  }
+  
+  .profile-main-container .card-container {
+    padding: 1rem;
+  }
+  .profile-main-container .card-container .data-content {
+    padding: 0rem 3rem;
+  }
+  .profile-main-container .card-container .card-inner {
+    width: 100%;
+    height: 100%;
+    background: #c9c9c9;
+  }
+  .profile-main-container .card-container .card-inner h2 {
+    font-family: "Eczar", serif;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .profile-main-container .card-container .card-inner div {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+  }
+  .profile-main-container .card-container .card-inner .profile-container .data-container .data-content h4:last-child {
+    margin-left: 1rem;
+  }
+  .profile-main-container .card-container .card-inner .profile-container .data-container .data-content h4 {
+    text-align: right;
+    font-size: 1rem;
+  }
+  .profile-main-container .card-container .card-inner .history-container {
+    position: relative;
+  }
+  .profile-main-container .card-container .card-inner .history-container table {
+    background-color: #555;
+    color: white;
+  }
+  .profile-main-container .card-container .card-inner .history-container table th {
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid white;
+  }
+  .profile-main-container .card-container .card-inner .history-container .order {
+    background: #555;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-main-container .card-container .card-inner .history-container h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: white;
+  }
+  
