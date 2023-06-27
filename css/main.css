@@ -138,11 +138,13 @@ header .navbar-nav .nav-link:hover{
 
 /*  card landing */
 .aside{
-  position: relative
+  /* position: relative */
 }
-.aside .card{
+.aside .card-box{
   position: absolute;
   font-family: var(--font-secondary);
+  top: 7rem;
+  left: -0.5rem;
   
 }
 .aside .card .trip-card{
@@ -152,16 +154,78 @@ header .navbar-nav .nav-link:hover{
   background: var(--color-primary);
 }
 
+.trip-card-inner h4{
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+.trip-card-inner p{
+  font-size: 0.3rem;
+  margin: 0;
+  padding: 0;
+  color: var(--color-title);
+}
 
+.card-box .total_trip h3{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem  0;
+}
+
+.card-box .total_trip p{
+  font-size: 0.5rem;
+  color: var(--color-title);
+  margin: 0;
+}
 /* card landing end */
 
+
+/* participant section start  */
+
+.participant-container{
+  position: absolute;
+  top: 2rem;
+ right: -5rem;
+}
+.participant-box .participant-image{
+  position: relative;
+}
+.participant-box .participant-image > *{
+  width: 60px;
+  height: 60px;
+  margin-left: -1.5rem;
+  /* background: var(--color-main); */
+}
+.participant-box .participant-image .plus{
+  background: var(--color-main);
+  color: var(--color-primary);
+  
+}
+
+
+.info-icon i{
+  color: var(--color-main);
+  font-size: 0.7rem;
+}
+.info-detail p{
+  margin: 0;
+  /* margin-bottom: 0; */
+  font-size: 0.4rem;
+}
+
+/* participant section end */
+
+
+
 .image-container{
-  /* background: gold; */
   /* width: 70%; */
+  position: relative;
 }
 .image-container img{
     width: 80%;
     height: auto;
+    /* background: linear-gradient(to bottom right, var(--color-yellow), var(--color-orange)); */
+
     /* background: #000; */
     /* margin-top: 10rem; */
 }
