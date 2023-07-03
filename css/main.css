@@ -216,11 +216,14 @@ margin-left: -2rem;
   /* margin-bottom: 0; */
   font-size: 0.6rem;
 }
-
+.participant-btn-conatiner{
+  margin: 1rem 0 ;
+}
 .participant-btn{
   font-family: var(--font-secondary);
   font-size: 0.7rem;
   font-weight: 700;
+  
 }
 
 .reshedule-btn{
@@ -482,13 +485,12 @@ color: var(--color-main)  ;
   }
 
   @media screen and (max-width: 572px){
-    
-    .participant-btn-conatiner{
-      /* background: #000; */
-      flex-direction: column;
+    .participant-container{
       
-
-    }
+      top: 0;
+     right: -5rem;
+    } 
+  
     .reshedule-btn{
       margin-left: 0 !important;
       
@@ -496,5 +498,22 @@ color: var(--color-main)  ;
       margin-bottom: 0.5rem;
     }
     
-  
+  .participant-btn-conatiner{
+    margin: 0.3rem 0;
+  }
+  }
+  @media screen and (max-width: 400px){
+    .participant-container{
+      position: relative;
+      align-self: center;
+         
+      top: 0;
+      left: 0;
+    }
+    .aside .card-box{
+     
+      top: 2rem;
+      left: 17rem;
+      z-index: 1;
+    }
   }
