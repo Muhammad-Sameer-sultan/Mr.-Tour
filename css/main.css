@@ -191,16 +191,20 @@ header .navbar-nav .nav-link:hover{
   position: relative;
 }
 .participant-box .participant-image > *{
-  width: 60px;
-  height: 60px;
-  margin-left: -1.5rem;
+  width: 4rem;
+margin-left: -2rem;
+
+  /* margin-left: -1.5rem; */
   /* background: var(--color-main); */
 }
 .participant-box .participant-image .plus{
   background: var(--color-main);
   color: var(--color-primary);
+  font-size: 0.5rem;
+  
   
 }
+
 
 
 .info-icon i{
@@ -210,9 +214,36 @@ header .navbar-nav .nav-link:hover{
 .info-detail p{
   margin: 0;
   /* margin-bottom: 0; */
-  font-size: 0.4rem;
+  font-size: 0.6rem;
 }
 
+.participant-btn{
+  font-family: var(--font-secondary);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.reshedule-btn{
+  /* color: var(--color-title); */
+  
+  /* background-color: var(--color-primary); */
+  
+}
+.reshedule-btn:hover{
+  color: var(--color-primary);
+  box-shadow: 0.3rem 1rem 0 var(--color-light-black);
+  background-color: var(--color-orange);
+  
+}
+
+.jointrip-btn{
+  background: var(--color-orange);
+  color: var(--color-primary);
+}
+.jointrip-btn:hover{
+  background: var(--color-main);
+  color: var(--color-primary);
+}
 /* participant section end */
 
 
@@ -448,4 +479,22 @@ color: var(--color-main)  ;
   }
   .contact-input-container .message{
     height: 7rem;
+  }
+
+  @media screen and (max-width: 572px){
+    
+    .participant-btn-conatiner{
+      /* background: #000; */
+      flex-direction: column;
+      
+
+    }
+    .reshedule-btn{
+      margin-left: 0 !important;
+      
+      box-shadow: none;
+      margin-bottom: 0.5rem;
+    }
+    
+  
   }
