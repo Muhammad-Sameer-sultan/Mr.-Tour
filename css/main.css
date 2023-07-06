@@ -6,7 +6,7 @@
 
 :root{
     --color-main: #383D93;
-    --color-main-s: #dbcdf9db;
+    --color-main-s: rgba(219, 205, 249, 0.859);
     --color-title: #2D3134;
     --color-primary: #FFFFFF;
     --color-yellow: #DEF587;
@@ -483,6 +483,10 @@ color: var(--color-main)  ;
   .contact-input-container .message{
     height: 7rem;
   }
+
+
+
+
 /* about page style start*/
 .about-image-container{
   background:linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url('../images/about-cover.jpg');
@@ -509,7 +513,7 @@ section{
 }
 .about-image-container h1{
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 7rem;
 
 }
@@ -520,9 +524,12 @@ section{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: var(--color-primary);
-  padding-top: 1rem  ;
-  border-bottom: 1px solid gray;
+  background: var(--color-main-s);
+  opacity: 1;
+  padding: 1rem 0 0.3rem 0 ;
+  /* border-bottom: 1px solid gray; */
+  box-shadow: 0 0.2rem 0rem gray;
+
   
 }
 .about-nav-container .navbar-container{
@@ -535,9 +542,10 @@ section{
   
 }
 .about-nav-container .navbar-container li a{
+  
   text-decoration: none ;
   text-transform: capitalize;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: var(--color-title);
   margin-top: 3rem;
 }
@@ -643,6 +651,25 @@ section{
   /* height: 100%; */
 }
 /* about page style end */
+
+
+/* footer start */
+footer{
+  background: var(--color-main);
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  padding: 2rem;
+  
+}
+/* footer socail link conatiner start*/
+
+
+/* footer socail link conatiner end */
+
+
+/* footer end */
+
+
 @media screen and (max-width: 786px){
   html{
     font-size: 62.5%;
@@ -651,15 +678,14 @@ section{
 }
   @media screen and (max-width: 572px){
    html{
-    font-size: 50%;
+    font-size: 70%;
   }
   .company-profile-container{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
     .participant-container{
       
-    top: 0;
-     right: -5rem;
+    
     } 
   
     .reshedule-btn{
@@ -681,10 +707,14 @@ section{
       top: 0;
       left: 0;
     }
+    
     .aside .card-box{
      
-      top: 2rem;
-      left: 17rem;
+      top: 1rem;
+      left: 21rem;
       z-index: 1;
+      font-size: 3rem;
     }
+
+  
   }
