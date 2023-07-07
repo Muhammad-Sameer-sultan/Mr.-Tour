@@ -663,12 +663,13 @@ footer{
 }
 
 .social-conatiner h3{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  font-family: var(--font-primary);
 }
 
 .social-conatiner .social-icon-conatiner{
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .social-conatiner .social-icon-conatiner a{
@@ -678,15 +679,29 @@ footer{
   color: var(--color-primary);
   
 }
-
+.social-conatiner .social-icon-conatiner a:hover{
+  color: var(--color-orange);
+  background: var(--color-primary);
+  border-radius: 1rem;
+}
+.rating{
+  /* font-size: 1.2rem; */
+}
 .rating .star-conatiner i{
   color: #FE7600;
 
 }
+.tour-star{
+  font-size: 1.2rem;
+  background: var(--color-orange);
+  padding: 0.3rem;
+  color: var(--color-primary);
+}
 .tour-star i{
-  color: red;
+  color: var(--color-primary);
 
 }
+
 .tour-star a{
   text-decoration: none;
   font-style: bolder;
@@ -695,6 +710,7 @@ footer{
 }
 .links-inner h5{
   font-weight: 700;
+  margin-bottom: 1rem;
   /* font-size: 1rem; */
 }
 .links-inner ul{
@@ -707,42 +723,61 @@ footer{
   text-decoration: none;
   color: var(--color-primary);
   text-transform: capitalize;
-  /* margin: 2rem 0; */
-  /* margin: 1rem 0;
-  background: #000; */
+  
+}
+
+.links-inner ul li a:hover{
+  color: var(--color-orange);
+  text-decoration: underline;
 }
 
 .links-inner div{
   margin: 0 2rem;
 }
 
+.touch h4,h3{
+  text-align: center;
+  font-family: var(--font-primary);
+}
+.touch h4{
+  font-size: 2rem;
+}
 
 
+.touch-box .gettouch-content{
+  margin: 0;
+  padding: 0;
+}
+.touch-box .gettouch-content a{
+  text-decoration: none;
+  margin: 0;
+  color: var(--color-orange);
+  font-size: 1.2rem;
+  
+}
+.touch-box .gettouch-content p{
+  margin: 0;
+}
 
+.play-store-container img{
+  color: red; 
+    background: var(--color-title);
+    /* border-radius: 1r ; */
+    padding: 0.2rem 0;
+    margin: 1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/* footer socail link conatiner start*/
-
-
-/* footer socail link conatiner end */
-
+.foot-copy-right .prepared-by a{
+    color: lightgray;
+    
+}
 
 /* footer end */
 
 
 @media screen and (max-width: 786px){
   html{
-    font-size: 62.5%;
+    font-size: 80%;
   }
 
 }
