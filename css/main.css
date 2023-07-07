@@ -661,6 +661,76 @@ footer{
   padding: 2rem;
   
 }
+
+.social-conatiner h3{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.social-conatiner .social-icon-conatiner{
+  font-size: 2rem;
+}
+
+.social-conatiner .social-icon-conatiner a{
+  
+  padding: 0 0.5rem;
+  text-decoration: none;
+  color: var(--color-primary);
+  
+}
+
+.rating .star-conatiner i{
+  color: #FE7600;
+
+}
+.tour-star i{
+  color: red;
+
+}
+.tour-star a{
+  text-decoration: none;
+  font-style: bolder;
+  color: var(--color-primary)
+  /* background: #000; */
+}
+.links-inner h5{
+  font-weight: 700;
+  /* font-size: 1rem; */
+}
+.links-inner ul{
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0;
+}
+
+.links-inner ul li a{
+  text-decoration: none;
+  color: var(--color-primary);
+  text-transform: capitalize;
+  /* margin: 2rem 0; */
+  /* margin: 1rem 0;
+  background: #000; */
+}
+
+.links-inner div{
+  margin: 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer socail link conatiner start*/
 
 
