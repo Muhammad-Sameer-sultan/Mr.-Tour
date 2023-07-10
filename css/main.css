@@ -27,13 +27,7 @@ html {
 }
 
 
-/* header nav .icon-container {
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-} */
+
 
 
 header nav .icon-container h6 {
@@ -82,6 +76,19 @@ header .navbar-nav .nav-link:hover{
 .icon-container  i{
   color: var(--color-main);
   font-size: 3em;
+}
+
+.view-container .view,home-profile-container,#logout_btn
+{
+  text-decoration: none ;
+  background: var(--color-orange);
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: var(--color-primary);
+}
+.view-container .view:hover,#logout_btn:hover{
+  background: var(--color-main);
 }
 
 .view-container a{
@@ -179,6 +186,43 @@ header .navbar-nav .nav-link:hover{
 }
 /* card landing end */
 
+/* banner section landing page */
+
+.banner-inner{
+
+position: relative;
+overflow: hidden;
+border-radius: 1rem;
+}
+
+.banner-inner img:hover{
+  width: 100%;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+.banner-rating-content {
+  text-decoration: none;
+  background: var(--color-main);
+  color: var(--color-primary);
+  padding: 0.5rem;
+}
+
+.banner-rating-content + a{
+  color: #383D93;
+  font-size: 1.2rem;
+  /* background: #000; */
+}
+.banner-price{
+  color: gray;
+}
+.banner-price h4{
+  color: #383D93;
+  font-size: 1.5rem;
+  margin: 0 ;
+  padding-left: .5rem;
+}
+/* /banner section landing page end */
 
 /* participant section start  */
 
@@ -369,9 +413,7 @@ margin-left: -2rem;
   .profile-main-container .card-container {
     padding: 1rem;
   }
-  .profile-main-container .card-container .data-content {
-    padding: 0rem 3rem;
-  }
+
   .profile-main-container .card-container .card-inner {
     width: 100%;
     height: 100%;
@@ -387,11 +429,11 @@ margin-left: -2rem;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
   }
-  .profile-main-container .card-container .card-inner .profile-container .data-container .data-content h4:last-child {
-    margin-left: 1rem;
+  .profile-main-container .card-container .card-inner .profile-container .data-container .data-content h4:first-child {
+    margin-right: 1rem;
   }
   .profile-main-container .card-container .card-inner .profile-container .data-container .data-content h4 {
-    text-align: right;
+    /* text-align: right; */
     font-size: 1rem;
   }
   .profile-main-container .card-container .card-inner .history-container {
@@ -405,6 +447,8 @@ margin-left: -2rem;
     text-decoration: none;
     padding: 1rem;
     border: 1px solid white;
+
+    
   }
   .profile-main-container .card-container .card-inner .history-container .order {
     background: #555;
@@ -687,7 +731,7 @@ footer{
 .rating{
   /* font-size: 1.2rem; */
 }
-.rating .star-conatiner i{
+ .star-conatiner i{
   color: #FE7600;
 
 }
@@ -785,6 +829,10 @@ footer{
    html{
     font-size: 70%;
   }
+
+  .image-container img{
+    /* margin-top: 3rem; */
+  }
   .company-profile-container{
     flex-direction: column-reverse;
   }
@@ -819,6 +867,14 @@ footer{
       left: 21rem;
       z-index: 1;
       font-size: 3rem;
+    }
+    .profile-main-container .card-container .card-inner .history-container table th {
+     
+      padding: 1rem;
+      font-size: 0.5rem;
+     
+  
+      
     }
 
   
