@@ -1,423 +1,755 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Mr. Tour</title>
-</head>
+  </head>
 
-<body>
-    <!doctype html>
+  <body>
+    <!DOCTYPE html>
     <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Tour & Trip</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
-            integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+          integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" rel="stylesheet" href="css/main.css">
-    </head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" rel="stylesheet" href="css/main.css" />
+      </head>
 
-    <body class="home">
+      <body class="home">
         <!-- header start -->
         <header>
-            <nav class="navbar navbar-expand-lg bg-transparent text-light">
-                <div class="container nav-inner d-flex justify-content-between">
-                    <div class="logo d-flex align-items-center">
-                        <img src="images/logo.PNG" alt="logo" width="100px" height="30px">
-                        <a class="navbar-brand" href="#">Mr. Tour</a>
-                    </div>
+          <nav class="navbar navbar-expand-lg bg-transparent text-light">
+            <div class="container nav-inner d-flex justify-content-between">
+              <div class="logo d-flex align-items-center">
+                <img
+                  src="images/logo.PNG"
+                  alt="logo"
+                  width="100px"
+                  height="30px"
+                />
+                <a class="navbar-brand" href="#">Mr. Tour</a>
+              </div>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/contact.html">Contact Us</a>
-                            </li>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <a
+                  id="home-signin-btn"
+                  class="btn sign mx-4"
+                  href="pages/sign_in page.html"
+                  >Sign In</a
+                >
+                <div
+                  id="home-profile-container"
+                  class="icon-container rounded-4 p-1 d-none"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h6 id="user-icon-name">Muhammad Sameer</h6>
 
-                        </ul>
-                        <a id="home-signin-btn" class="btn sign mx-4" href="pages/sign_in page.html">Sign In</a>
-                        <div id="home-profile-container" class="icon-container rounded-4 p-1 d-none">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h6 id="user-icon-name">Muhammad Sameer</h6>
-
-                                <i class="fa fa-user-circle " aria-hidden="true"></i>
-                            </div>
-                            <div class="view-container d-flex justify-content-between p-2 ">
-                                <a id="logout_btn" class="me-3" href="../index.html">Logout</a>
-                                <a class="view " href="pages/profile.html">View Profile</a>
-                            </div>
-                        </div>
-                    </div>
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                  </div>
+                  <div
+                    class="view-container d-flex justify-content-between p-2"
+                  >
+                    <a id="logout_btn" class="me-3" href="../index.html"
+                      >Logout</a
+                    >
+                    <a class="view" href="pages/profile.html">View Profile</a>
+                  </div>
                 </div>
-            </nav>
-
+              </div>
+            </div>
+          </nav>
         </header>
 
         <!-- /header end -->
         <!-- //landing page start -->
         <div>
-            <div class="container landing-container">
-                <div class="row row-gap-3 inner-head p-2 ">
-                    <div class="col-lg-4 discover text-center">
-
-                        <div class="title-container">
-                            <h1>
-                                Discover the <span>Best Lovely Places!</span>
-                            </h1>
-                            <p>Plain and book your perfect with expert advice, travel trips, destination information
-                                and
-                                spiration from us.</p>
-                        </div>
-                        <div class="discover-now-container d-flex justify-content-center">
-                            <button class="btn discover-btn me-3">Discover Now</button>
-                            <div class="request-call-container d-flex justify-content-between align-items-center">
-                                <div
-                                    class="phone-icon rounded-circle  d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-phone rounded-circle p-3" aria-hidden="true"></i>
-                                </div>
-                                <h6 class="px-2">Request a call</h6>
-                            </div>
-                        </div>
+          <div class="container landing-container">
+            <div class="row row-gap-3 inner-head p-2">
+              <div class="col-lg-4 discover text-center">
+                <div class="title-container">
+                  <h1>Discover the <span>Best Lovely Places!</span></h1>
+                  <p>
+                    Plain and book your perfect with expert advice, travel
+                    trips, destination information and spiration from us.
+                  </p>
+                </div>
+                <div
+                  class="discover-now-container d-flex justify-content-center"
+                >
+                  <button class="btn discover-btn me-3">Discover Now</button>
+                  <div
+                    class="request-call-container d-flex justify-content-between align-items-center"
+                  >
+                    <div
+                      class="phone-icon rounded-circle d-flex justify-content-center align-items-center"
+                    >
+                      <i
+                        class="fa fa-phone rounded-circle p-3"
+                        aria-hidden="true"
+                      ></i>
                     </div>
-                    <div class="col-lg-7 aside d-flex justify-content-center align-items-center">
-
-                        <div class="image-container d-flex justify-content-center align-items-center flex-column">
+                    <h6 class="px-2">Request a call</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-7 aside d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="image-container d-flex justify-content-center align-items-center flex-column"
+                >
+                  <div
+                    class="card card-box car- p-2 d-flex justify-content-center align-items-center rounded-3"
+                  >
+                    <div class="trip-card rounded-circle p-1">
+                      <div
+                        class="trip-card-inner p-2 rounded-circle d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h4>28</h4>
+                        <p>Times to Travel</p>
+                      </div>
+                    </div>
+                    <div
+                      class="total_trip d-flex justify-content-center align-items-center flex-column"
+                    >
+                      <h3>12</h3>
+                      <p>Total Trip(nonth)</p>
+                    </div>
+                  </div>
+                  <div class="card participant-container p-3 rounded-4">
+                    <div class="participant-box">
+                      <h5>Participnats</h5>
+                      <div
+                        class="participant-image d-flex justify-content-start align-items-center"
+                      >
+                        <div class="m-0">
+                          <img
+                            class="rounded-circle p-2 m-0"
+                            src="images/user.1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div>
+                          <img
+                            class="rounded-circle p-2"
+                            src="images/user2.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="rounded-circle p-2 d-flex justify-content-center align-items-center"
+                        >
+                          <i
+                            class="fa-solid fa-plus plus p-3 rounded-circle"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container participant-info-container">
+                      <h5>info</h5>
+                      <div class="row">
+                        <div class="col p-1">
+                          <div class="row mb-2">
                             <div
-                                class="card card-box car- p-2  d-flex justify-content-center align-items-center rounded-3">
-                                <div class="trip-card rounded-circle p-1 ">
-                                    <div
-                                        class="trip-card-inner p-2 rounded-circle  d-flex justify-content-center align-items-center flex-column">
-                                        <h4>28</h4>
-                                        <p>Times to Travel</p>
-
-                                    </div>
-                                </div>
-                                <div class="total_trip  d-flex justify-content-center align-items-center flex-column">
-
-                                    <h3>12</h3>
-                                    <p>Total Trip(nonth)</p>
-                                </div>
+                              class="col-7 column-gap-3 d-flex justify-content-center align-items-center"
+                            >
+                              <div class="info-icon">
+                                <i class="fa fa-calendar"></i>
+                              </div>
+                              <div class="info-detail">
+                                <p class="fw-bold mb-1">Date</p>
+                                <p>27 june, 2023</p>
+                              </div>
                             </div>
-                            <div class="card participant-container p-3 rounded-4 ">
-                                <div class="participant-box">
-                                    <h5>Participnats</h5>
-                                    <div class="participant-image  d-flex justify-content-start align-items-center">
-                                        <div class="m-0">
-                                            <img class="rounded-circle p-2 m-0" src="images/user.1.jpg" alt="">
-                                        </div>
-                                        <div>
-                                            <img class="rounded-circle p-2 " src="images/user2.jpg" alt="">
-
-                                        </div>
-                                        <div
-                                            class="rounded-circle p-2 d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-plus plus p-3 rounded-circle"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="container participant-info-container">
-                                    <h5>info</h5>
-                                    <div class="row ">
-                                        <div class="col p-1">
-                                            <div class="row mb-2">
-                                                <div
-                                                    class="col-7 column-gap-3   d-flex justify-content-center align-items-center">
-                                                    <div class="info-icon">
-                                                        <i class="fa fa-calendar"></i>
-                                                    </div>
-                                                    <div class="info-detail">
-                                                        <p class="fw-bold mb-1">Date</p>
-                                                        <p>27 june, 2023</p>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class=" mt-2 col-3 column-gap-3 d-flex justify-content-center align-items-center">
-                                                    <div class="info-icon">
-                                                        <i class="fa-solid fa-user-plus"></i>
-                                                    </div>
-                                                    <div class="info-detail">
-                                                        <p class="fw-bold mb-1">Guest</p>
-                                                        <p>Yes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row ">
-                                                <div
-                                                    class=" col-7 column-gap-3 d-flex justify-content-center align-items-center">
-                                                    <div class="info-icon">
-                                                        <i class="fa-solid fa-clock"></i>
-                                                    </div>
-                                                    <div class="info-detail">
-                                                        <p class="fw-bold mb-1">Time</p>
-                                                        <p>27 june, 2023</p>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class=" col-3 mt-2 column-gap-3 d-flex justify-content-center align-items-center">
-                                                    <div class="info-icon">
-                                                        <i class="fa-solid fa-dollar-sign"></i>
-                                                    </div>
-                                                    <div class="info-detail">
-                                                        <p class="fw-bold mb-1">Price</p>
-                                                        <p>$2k</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="participant-btn-conatiner    d-flex  justify-content-between align-items-center">
-                                                <button
-                                                    class="btn participant-btn card  reshedule-btn ">Reshedule</button>
-                                                <button class="btn participant-btn jointrip-btn">Join Trip</button>
-                                            </div>
-                                        </div>
-
-
-
-
-
-                                    </div>
-                                </div>
+                            <div
+                              class="mt-2 col-3 column-gap-3 d-flex justify-content-center align-items-center"
+                            >
+                              <div class="info-icon">
+                                <i class="fa-solid fa-user-plus"></i>
+                              </div>
+                              <div class="info-detail">
+                                <p class="fw-bold mb-1">Guest</p>
+                                <p>Yes</p>
+                              </div>
                             </div>
-                            <img class="mt-3" src="images/people.png" class="img-fluid img-thumbnail rounded " alt="">
+                          </div>
+                          <div class="row">
+                            <div
+                              class="col-7 column-gap-3 d-flex justify-content-center align-items-center"
+                            >
+                              <div class="info-icon">
+                                <i class="fa-solid fa-clock"></i>
+                              </div>
+                              <div class="info-detail">
+                                <p class="fw-bold mb-1">Time</p>
+                                <p>27 june, 2023</p>
+                              </div>
+                            </div>
+                            <div
+                              class="col-3 mt-2 column-gap-3 d-flex justify-content-center align-items-center"
+                            >
+                              <div class="info-icon">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                              </div>
+                              <div class="info-detail">
+                                <p class="fw-bold mb-1">Price</p>
+                                <p>$2k</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="participant-btn-conatiner d-flex justify-content-between align-items-center"
+                          >
+                            <button
+                              class="btn participant-btn card reshedule-btn"
+                            >
+                              Reshedule
+                            </button>
+                            <button class="btn participant-btn jointrip-btn">
+                              Join Trip
+                            </button>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <img
+                    class="mt-3"
+                    src="images/people.png"
+                    class="img-fluid img-thumbnail rounded"
+                    alt=""
+                  />
                 </div>
-                <div class="row mt-3 container-fluid inner-foot justify-content-center align-items-center">
-                    <div
-                        class=" col-sm-6 col-lg-2 mt-3 column-gap-2 foot-content d-flex align-items-center justify-content-center">
-                        <button><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-                    </div>
-                    <div
-                        class=" col-sm-6 col-lg-3 mt-3 column-gap-2 foot-content d-flex align-items-center justify-content-center ">
-                        <div class="location"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="foot-icon d-flex flex-column mx-2">
-                            <h6>Destination</h6>
-                            <h4>Monaco,Itlay</h4>
-                        </div>
-                    </div>
-                    <div
-                        class=" col-sm-6 col-lg-3 mt-3 column-gap-2 foot-content d-flex align-items-center justify-content-center ">
-                        <div class="location"><i class="fa fa-usd" aria-hidden="true"></i></div>
-                        <div class="foot-icon d-flex flex-column mx-2">
-                            <h6>Average</h6>
-                            <h4>$500 - $800</h4>
-                        </div>
-                    </div>
-                    <div
-                        class=" col-sm-6 col-lg-4 mt-3 column-gap-2 foot-content d-flex align-items-center justify-content-center ">
-                        <div class="location"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-                        <div class="foot-icon d-flex flex-column mx-2">
-                            <h6>Average</h6>
-                            <h4>Jun 25 , Nov</h4>
-                        </div>
-                    </div>
-
-                </div>
-
+              </div>
             </div>
+            <div
+              class="row mt-3 container-fluid inner-foot justify-content-center align-items-center"
+            >
+              <div
+                class="col-sm-6 col-lg-2 mt-3 column-gap-2 foot-content d-flex align-items-center justify-content-center"
+              >
+                <button>
+                  <i class="fa fa-search" aria-hidden="true"></i> Search
+                </button>
+              </div>
+              <div
+                class="col-sm-6 col-lg-3 mt-3 column-gap-2 foot-content d-flex align-items-center justify-content-center"
+              >
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="foot-icon d-flex flex-column mx-2">
+                  <h6>Destination</h6>
+                  <h4>Monaco,Itlay</h4>
+                </div>
+              </div>
+              <div
+                class="col-sm-6 col-lg-3 mt-3 column-gap-2 foot-content d-flex align-items-center justify-content-center"
+              >
+                <div class="location">
+                  <i class="fa fa-usd" aria-hidden="true"></i>
+                </div>
+                <div class="foot-icon d-flex flex-column mx-2">
+                  <h6>Average</h6>
+                  <h4>$500 - $800</h4>
+                </div>
+              </div>
+              <div
+                class="col-sm-6 col-lg-4 mt-3 column-gap-2 foot-content d-flex align-items-center justify-content-center"
+              >
+                <div class="location">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                </div>
+                <div class="foot-icon d-flex flex-column mx-2">
+                  <h6>Average</h6>
+                  <h4>Jun 25 , Nov</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- landing page end -->
 
         <!-- card section -->
-        <section class=" container">
-            <div class="banner-conatiner row ">
-                <div class=" my-3 my-lg-0 col-lg-4">
-                    <div class="banner-inner">
-                        <img src="../images/banner.jpeg" width="100%" alt="">
-                    </div>
+        <section class="container my-2">
+          <div>
+            <h2 class="text-center">Discount Offers</h2>
+            <div class="banner-conatiner row">
+              <div class="my-3 my-lg-0 col-lg-4">
+                <div class="banner-inner">
+                  <img src="../images/banner.jpeg" width="100%" alt="" />
                 </div>
-                <div class="  my-3 my-lg-0 col-lg-4">
-                    <div class="banner-inner">
-                        <img src="../images/banner1.jpeg" width="100%" alt="">
-                    </div>
+              </div>
+              <div class="my-3 my-lg-0 col-lg-4">
+                <div class="banner-inner">
+                  <img src="../images/banner1.jpeg" width="100%" alt="" />
                 </div>
-                <div class="  my-3 my-lg-0 col-lg-4">
-                    <div class="banner-inner">
-                        <img src="../images/banner3.jpeg" width="100%" alt="">
-                    </div>
+              </div>
+              <div class="my-3 my-lg-0 col-lg-4">
+                <div class="banner-inner">
+                  <img src="../images/banner3.jpeg" width="100%" alt="" />
                 </div>
+              </div>
             </div>
+          </div>
 
-            <div class="featured m-3">
-                <h2 class="text-center">Featured Properties</h2>
-                <div class="row">
-                    <div class="card p-0" style="width: 20rem;">
-                        <div class="banner-inner rounded-0">
-                            <img src="images/card4.jpg" class=" card-img-top" alt="...">
-                        </div>
-                        <div class="card-body ">
-                            <h5 class="card-title">Hotel Muse Bangkok Langsuan - MGallery</h5>
-                            <div class="mt-3 star-conatiner">
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <div class="banner-rating-container mt-4 d-flex">
-                                <div class="banner-rating-box ">
-                                    <a class="banner-rating-content rounded-end-circle">4.4<sub> /(5)</sub></a>
-                                    <a>284 reviews</a>
-                                </div>
-                            </div>
-                            <div class=" banner-price mt-3 d-flex justify-content-end align-items-end">
-                                From <h4> PKR- 200RP </h4>
-
-                            </div>
-
-                            
-
-
-
-                        </div>
+          <div class="featured mt-4">
+            <h2 class="text-center">Featured Properties</h2>
+            <div class="row">
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card p-0">
+                  <div class="banner-inner rounded-0">
+                    <img
+                      src="images/card4.jpg"
+                      class="card-img-top"
+                      alt="Hotel Muse"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Hotel Muse Bangkok Langsuan</h5>
+                    <div class="star-conatiner">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
                     </div>
+                    <div class="banner-rating-container mt-3 d-flex">
+                      <div class="banner-rating-box">
+                        <a class="banner-rating-content rounded-end-circle"
+                          >4.4<sub> /(5)</sub></a
+                        >
+                        <a>284 reviews</a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-price mt-3 d-flex justify-content-end align-items-end"
+                    >
+                      From
+                      <h4>PKR- 200 Rs</h4>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card p-0">
+                  <div class="banner-inner rounded-0">
+                    <img
+                      src="images/card5.jpg"
+                      class="card-img-top"
+                      alt="Baiyoke Sky Hotel Bangkok"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Baiyoke Sky Hotel Bangkok</h5>
+                    <div class="star-conatiner">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="banner-rating-container mt-3 d-flex">
+                      <div class="banner-rating-box">
+                        <a class="banner-rating-content rounded-end-circle"
+                          >4.5<sub> /(5)</sub></a
+                        >
+                        <a>444 reviews</a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-price mt-3 d-flex justify-content-end align-items-end"
+                    >
+                      From
+                      <h4>PKR- 25000 Rs</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card p-0">
+                  <div class="banner-inner rounded-0">
+                    <img
+                      src="images/card6.jpg"
+                      class="card-img-top"
+                      alt="Sathorn Vista, Bangkok - Marriott Executive Apartments"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sathorn Vista, Bangkok - Marriott
+                    </h5>
+                    <div class="star-conatiner">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="banner-rating-container mt-3 d-flex">
+                      <div class="banner-rating-box">
+                        <a class="banner-rating-content rounded-end-circle"
+                          >4.1<sub> /(5)</sub></a
+                        >
+                        <a>147 reviews</a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-price mt-3 d-flex justify-content-end align-items-end"
+                    >
+                      From
+                      <h4>PKR- 10500 Rs</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0 card-click p-0 overflow-hidden">
+                <img src="images/cardgo1.jpg" class="rounded-top-2" alt="" />
+
+                <div
+                  class="container-fluid go-container rounded-top-circle d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h6>Discover great deals on hotels around the world</h6>
+                  <button class="mt-2 container-fluid go-btn">Go Now</button>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="featured mt-4">
+            <h2 class="text-center">Recomended Car Rental</h2>
+            <div class="row">
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card p-0">
+                  <div class="banner-inner rounded-0">
+                    <img
+                      src="images/card7.jpg"
+                      class="card-img-top"
+                      alt="Toyota Corolla or Similar"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Corolla or Similar</h5>
+                    <div class="star-conatiner">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="banner-rating-container mt-3 d-flex">
+                      <div class="banner-rating-box">
+                        <a class="banner-rating-content rounded-end-circle"
+                          >3.2<sub> /(5)</sub></a
+                        >
+                        <a>Good</a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-price mt-3 d-flex justify-content-end align-items-end"
+                    >
+                      From
+                      <h4>PKR- 15500 Rs</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card p-0">
+                  <div class="banner-inner rounded-0">
+                    <img
+                      src="images/card8.jpg"
+                      class="card-img-top"
+                      alt="Fiat 500 or Similar"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Fiat 500 or Similar</h5>
+                    <div class="star-conatiner">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="banner-rating-container mt-3 d-flex">
+                      <div class="banner-rating-box">
+                        <a class="banner-rating-content rounded-end-circle"
+                          >4.8<sub> /(5)</sub></a
+                        >
+                        <a>Very Good</a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-price mt-3 d-flex justify-content-end align-items-end"
+                    >
+                      From
+                      <h4>PKR- 22500 Rs</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0">
+                <div class="card p-0">
+                  <div class="banner-inner rounded-0">
+                    <img
+                      src="images/card9.jpg"
+                      class="card-img-top"
+                      alt="Nissan Versa or Similar"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Nissan Versa or Similar</h5>
+                    <div class="star-conatiner">
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </div>
+                    <div class="banner-rating-container mt-3 d-flex">
+                      <div class="banner-rating-box">
+                        <a class="banner-rating-content rounded-end-circle"
+                          >5<sub> /(5)</sub></a
+                        >
+                        <a>Excellent</a>
+                      </div>
+                    </div>
+                    <div
+                      class="banner-price mt-3 d-flex justify-content-end align-items-end"
+                    >
+                      From
+                      <h4>PKR- 15500 Rs</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-3 mb-5 mb-lg-0 card-click p-0 overflow-hidden">
+               <div>
+                <img src="images/cardgo2.jpg" class="rounded-top-2" alt="" />
+
+                <div
+                  class="container-fluid go-container "
+                >
+                  <h6>Big Brand Big Discount</h6>
+                  <button class="mt-2 container-fluid go-btn">Go Now</button>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- /card section end -->
 
-
         <!-- footer start -->
         <footer class="mt-5">
-            <div class="container">
-                <div
-                    class="social-conatiner mb-4 d-flex justify-content-between align-items-center flex-column flex-md-row flex-wrap flex-lg-nowrap ">
-                    <div>
-                        <h3>Get Social</h3>
-                    </div>
-                    <div class="social-icon-conatiner d-flex">
-                        <a href="https://www.facebook.com/profile.php?id=100066449539429&mibextid=ZbWKwL"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://github.com/Muhammad-Sameer-sultan" target="_blank"><i
-                                class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/muhammad-sameer-sultan-bb877523b" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Muhammad-Sameer-sultan" target="_blank"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/muhammad-sameer-sultan-bb877523b" target="_blank"><i
-                                class="fa-brands fa-tiktok"></i></a>
-                    </div>
-                    <div class="rating d-flex justify-content-between align-items-center flex-nowrap">
-                        <div class="star-conatiner ">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="review mx-4">
-                            4.3 rating | 144,178 reviews
-                        </div>
-                        <div class="tour-star">
-                            <i class="fa-solid fa-star"></i>
-                            <a href="index.html">Mr. Tour</a>
-                        </div>
-                    </div>
+          <div class="container">
+            <div
+              class="social-conatiner mb-4 d-flex justify-content-between align-items-center flex-column flex-md-row flex-wrap flex-lg-nowrap"
+            >
+              <div>
+                <h3>Get Social</h3>
+              </div>
+              <div class="social-icon-conatiner d-flex">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100066449539429&mibextid=ZbWKwL"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a
+                  href="https://github.com/Muhammad-Sameer-sultan"
+                  target="_blank"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/muhammad-sameer-sultan-bb877523b"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/Muhammad-Sameer-sultan"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/muhammad-sameer-sultan-bb877523b"
+                  target="_blank"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+              </div>
+              <div
+                class="rating d-flex justify-content-between align-items-center flex-nowrap"
+              >
+                <div class="star-conatiner">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
-
-                <div class="links-conatiner mb-4 d-flex justify-content-between flex-column flex-lg-row">
-                    <div class="links-inner d-flex justify-content-between align-items-center ">
-                        <div class="link-box m-0">
-                            <h5>Company</h5>
-                            <ul>
-                                <li><a href="index.html">About</a></li>
-                                <li><a href="index.html">carrer</a></li>
-                                <li><a href="index.html">Mobile</a></li>
-                                <li><a href="index.html">block</a></li>
-                                <li><a href="index.html">How we work</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h5>Contact Us</h5>
-                            <ul>
-                                <li><a href="pages/contact.html">Help/FAQ</a></li>
-                                <li><a href="pages/contact.html">Press</a></li>
-                                <li><a href="pages/contact.html">Affilates</a></li>
-                                <li><a href="pages/contact.html">Hotel owners</a></li>
-                                <li><a href="pages/contact.html">Partners</a></li>
-                                <li><a href="pages/contact.html">Advertise with Us</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h5>More</h5>
-                            <ul>
-                                <li><a href="pages/sign_in page.html">news</a></li>
-                                <li><a href="pages/sign_in page.html">Travel Agent</a></li>
-                                <li><a href="pages/sign_in page.html">carrer</a></li>
-                                <li><a href="pages/sign_in page.html">Air lines</a></li>
-                                <li><a href="pages/sign_in page.html">Badge and certificates</a></li>
-                                <li><a href="pages/sign_in page.html">Advertise with Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="touch  border-start p-2 border-light">
-                        <h3>We've been where you want to go</h3>
-                        <hr>
-                        <div class="touch d-flex justify-content-center align-items-center flex-column">
-                            <h4>Get In Touch</h4>
-
-                            <div class="touch-box d-flex justify-content-between">
-                                <div class="gettouch-content me-2">
-                                    <p>For business travel, call:</p>
-                                    <a href="">03351332645</a>
-                                </div>
-
-                                <div class="gettouch-content border-start border-light ps-2">
-                                    <p>Or e-mail us at:</p>
-                                    <a href="https://portfolio-a679f.web.app/">sameersultan1001@gmail.com</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
+                <div class="review mx-4">4.3 rating | 144,178 reviews</div>
+                <div class="tour-star">
+                  <i class="fa-solid fa-star"></i>
+                  <a href="index.html">Mr. Tour</a>
                 </div>
-
-                <div
-                    class="foot-copy-right     d-flex align-items-center justify-content-between flex-column flex-md-row ">
-                    <div class="play-store-container">
-                        <img src="https://cache.vtrcdn.com/orion/images/buttons/google-play-store/en/get-on-google-play.svg"
-                            alt="Download Viator app from Google Play button text" loading="lazy" width="125"
-                            height="60">
-                        <img src="https://cache.vtrcdn.com/orion/images/buttons/apple-app-store/en/download-on-app-store.svg"
-                            alt="Download Viator app from App Store button text" loading="lazy" width="125" height="60">
-                    </div>
-                    <div>
-                        <p class="mb-0">&copy; All right reserved <strong>Mr.Tour</strong></p>
-                    </div>
-                    <div class="prepared-by">
-                        <label for="">Website by:</label>
-                        <a href="#">Muhammad Sameer Sultan</a>
-                    </div>
-                </div>
+              </div>
             </div>
+
+            <div
+              class="links-conatiner mb-4 d-flex justify-content-between flex-column flex-lg-row"
+            >
+              <div
+                class="links-inner d-flex justify-content-between align-items-center"
+              >
+                <div class="link-box m-0">
+                  <h5>Company</h5>
+                  <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">carrer</a></li>
+                    <li><a href="index.html">Mobile</a></li>
+                    <li><a href="index.html">block</a></li>
+                    <li><a href="index.html">How we work</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h5>Contact Us</h5>
+                  <ul>
+                    <li><a href="pages/contact.html">Help/FAQ</a></li>
+                    <li><a href="pages/contact.html">Press</a></li>
+                    <li><a href="pages/contact.html">Affilates</a></li>
+                    <li><a href="pages/contact.html">Hotel owners</a></li>
+                    <li><a href="pages/contact.html">Partners</a></li>
+                    <li><a href="pages/contact.html">Advertise with Us</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h5>More</h5>
+                  <ul>
+                    <li><a href="pages/sign_in page.html">news</a></li>
+                    <li><a href="pages/sign_in page.html">Travel Agent</a></li>
+                    <li><a href="pages/sign_in page.html">carrer</a></li>
+                    <li><a href="pages/sign_in page.html">Air lines</a></li>
+                    <li>
+                      <a href="pages/sign_in page.html"
+                        >Badge and certificates</a
+                      >
+                    </li>
+                    <li>
+                      <a href="pages/sign_in page.html">Advertise with Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="touch border-start p-2 border-light">
+                <h3>We've been where you want to go</h3>
+                <hr />
+                <div
+                  class="touch d-flex justify-content-center align-items-center flex-column"
+                >
+                  <h4>Get In Touch</h4>
+
+                  <div class="touch-box d-flex justify-content-between">
+                    <div class="gettouch-content me-2">
+                      <p>For business travel, call:</p>
+                      <a href="">03351332645</a>
+                    </div>
+
+                    <div
+                      class="gettouch-content border-start border-light ps-2"
+                    >
+                      <p>Or e-mail us at:</p>
+                      <a href="https://portfolio-a679f.web.app/"
+                        >sameersultan1001@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="foot-copy-right d-flex align-items-center justify-content-between flex-column flex-md-row"
+            >
+              <div class="play-store-container">
+                <img
+                  src="https://cache.vtrcdn.com/orion/images/buttons/google-play-store/en/get-on-google-play.svg"
+                  alt="Download Viator app from Google Play button text"
+                  loading="lazy"
+                  width="125"
+                  height="60"
+                />
+                <img
+                  src="https://cache.vtrcdn.com/orion/images/buttons/apple-app-store/en/download-on-app-store.svg"
+                  alt="Download Viator app from App Store button text"
+                  loading="lazy"
+                  width="125"
+                  height="60"
+                />
+              </div>
+              <div>
+                <p class="mb-0">
+                  &copy; All right reserved <strong>Mr.Tour</strong>
+                </p>
+              </div>
+              <div class="prepared-by">
+                <label for="">Website by:</label>
+                <a href="#">Muhammad Sameer Sultan</a>
+              </div>
+            </div>
+          </div>
         </footer>
         <!-- footer end -->
         <script src="js/login.js"></script>
 
         <!-- <script src="js/signpage.js"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
-    </body>
-
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+          crossorigin="anonymous"
+        ></script>
+      </body>
     </html>
-</body>
-
+  </body>
 </html>

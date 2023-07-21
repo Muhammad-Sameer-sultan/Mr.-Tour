@@ -194,8 +194,11 @@ position: relative;
 overflow: hidden;
 border-radius: 1rem;
 }
+.banner-inner img{
+  transition: all 0.3s ease-in-out;
 
-.banner-inner img:hover{
+}
+.banner-inner img:hover,.featured .card-click img:hover{
   width: 100%;
     transform: scale(1.1); 
     cursor: pointer;
@@ -205,12 +208,13 @@ border-radius: 1rem;
   text-decoration: none;
   background: var(--color-main);
   color: var(--color-primary);
-  padding: 0.5rem;
+  padding: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .banner-rating-content + a{
   color: #383D93;
-  font-size: 1.2rem;
+  font-size: 1rem;
   /* background: #000; */
 }
 .banner-price{
@@ -218,11 +222,58 @@ border-radius: 1rem;
 }
 .banner-price h4{
   color: #383D93;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0 ;
   padding-left: .5rem;
 }
+.featured .card-click{
+  position: relative;
+}
+
 /* /banner section landing page end */
+
+/* feature section start*/
+.featured .card {
+  margin-right: 1.5rem; /* Adjust this value as needed */
+}
+
+.featured .card:last-child {
+  margin-right: 0; /* Remove margin from the last card to prevent overflow */
+  
+}
+.featured .card-click img{
+  transition: all 0.3s ease-in-out;
+  /* height: 50%; */
+  max-width: 100%;
+  /* background:  #ffffff url("../images/cardgo1.jpg") no-repeat ;
+  background-position: center;
+  background-size: cover; */
+}
+.go-container{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3rem 1rem 1rem 1rem;
+  background: rgba(56, 61, 147, 0.658);
+  
+}
+.go-btn{
+  font-weight: 500;
+  padding: 0.5rem;
+  background: #383D93;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 0 0.5rem #ffffff;
+}
+.go-btn:hover{
+  background: #FFFFFF;
+  color: #383D93;
+  box-shadow: 0 0 0.5rem #383D93;
+}
+/* feature section end*/
+
 
 /* participant section start  */
 
@@ -270,12 +321,7 @@ margin-left: -2rem;
   
 }
 
-.reshedule-btn{
-  /* color: var(--color-title); */
-  
-  /* background-color: var(--color-primary); */
-  
-}
+
 .reshedule-btn:hover{
   color: var(--color-primary);
   box-shadow: 0.3rem 1rem 0 var(--color-light-black);
