@@ -199,7 +199,7 @@ border-radius: 1rem;
 
 }
 .banner-inner img:hover,.featured .card-click img:hover{
-  width: 100%;
+  
     transform: scale(1.1); 
     cursor: pointer;
 }
@@ -227,6 +227,7 @@ border-radius: 1rem;
   padding-left: .5rem;
 }
 .featured .card-click{
+  height: 100%;
   position: relative;
 }
 
@@ -234,6 +235,7 @@ border-radius: 1rem;
 
 /* feature section start*/
 .featured .card {
+  height: 100%;
   margin-right: 1.5rem; /* Adjust this value as needed */
 }
 
@@ -243,15 +245,17 @@ border-radius: 1rem;
 }
 .featured .card-click img{
   transition: all 0.3s ease-in-out;
-  /* height: 50%; */
-  max-width: 100%;
-  /* background:  #ffffff url("../images/cardgo1.jpg") no-repeat ;
-  background-position: center;
-  background-size: cover; */
+  
+  transition: all 0.3s ease-in-out;
+  /* max-width: 100%; */
+  max-height: 100%; /* Limit the height to fit within the container */
+  object-fit: cover; 
+  height: 100%; /* Set the height to fill the container */
+  width: 100%; 
 }
 .go-container{
   position: absolute;
-  top: 0;
+  bottom: 0;
   z-index: 1;
   color: #FFFFFF;
   text-align: center;
@@ -520,11 +524,13 @@ margin-left: -2rem;
   /* background: fuchsia; */
 }
 .contact-box{
-  background: var(--color-light-black)
+  background: rgba(0, 0, 0, 0.096);
 
 }
 
-  .contact-title-container h2 {
+  .contat-form-container h2{
+    text-align: center;
+    margin-bottom: 0;
     text-align: center;
     color: var(--color-main);
     font-size: 3rem;
@@ -534,9 +540,9 @@ margin-left: -2rem;
   }
   .contact-title-container h4 {
     text-align: center;
-    color: var(--color-title);
+    color: var(--color-main);
     font-size: 2rem;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     /* font-weight: 700; */
   }
 
@@ -553,10 +559,12 @@ font-family: var(--font-secondary);
 font-size: 3rem;
 color: var(--color-main)  ;
 }
-  .contact-form{
+
+.contact-form{
+    /* background: var(--color-main); */
     /* width: 80%; */
     position: relative;
-    background: var(--color-primary);
+    /* background: var(--color-primary); */
   }
 
   .contact-input-container{
