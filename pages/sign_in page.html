@@ -38,6 +38,8 @@
                     <h2>Sign Up Now</h2>
                     <h4>Specail Discount for our New Customers</h4>
                     <p>“Welcome to Pakistan Travel Guide, where we specialize in creating unforgettable travel experiences for our clients. With years of experience in the travel industry, our team of experts are dedicated to planning and executing personalized trips that exceed expectations</p>
+                    <img src="../images/signin.jfif" class="img-fluid" alt="">
+
                 </div>
                 <!-- sign up title div end -->
             </div>
@@ -49,16 +51,16 @@
                     <form>
                         <div class="mb-3">
                             <label for="signin-email" class="form-label">Email address</label>
-                            <input type="email" class="form-control form-control-sm" id="signin-email" placeholder="Enter your Email">
+                            <input type="email" class="form-control form-control-sm" id="signin-email" placeholder="Enter your Email"  required>
                         </div>
 
                         <div class="mb-3">
                             <label for="signin-password" class="form-label">Password</label>
-                            <input type="password" class="form-control form-control-sm" id="signin-password"
-                                placeholder="Enter your Password">
+                            <input type="password" class="form-control form-control-sm" id="signin-password "
+                                placeholder="Enter your Password" required>
                             <small><a class="forget" href="">Forget Password</a></small>
                         </div>
-                        <button class="btn btn-success" id="signin-btn">Sign In</button>
+                        <button type="submit" class="btn btn-success" id="signin-btn">Sign In</button>
 
                     </form>
                     <p class="signup_click my-4 ">If you don't have an account? please registered your self by
@@ -73,45 +75,48 @@
                 <div class="inner d-none" id="signup-box">
 
                     <!-- sign up form start -->
-                    <h2>Sign Up</h2>
+                    <h2 class="fs-1">Sign Up</h2>
                     <form>
                         <div class="mb-2">
                             <label for="signin-email" class="form-label">Email address</label>
-                            <input type="email" class="form-control form-control-sm" id="signup-email" placeholder="Enter your Email">
+                            <input type="email" class="form-control form-control-sm" id="signup-email" placeholder="Enter your Email" >
                         </div>
                         <div class="mb-2">
                             <label for="user-name" class="form-label">User Name</label>
-                            <input type="text" class="form-control form-control-sm" id="signup-user" placeholder="Enter your User Name">
+                            <input type="text" class="form-control form-control-sm" id="signup-user" placeholder="Enter your User Name" >
                         </div>
                         <div class="mb-2">
                             <label for="dob" class="form-label">Date of Birth</label>
-                            <input type="date" class="form-control form-control-sm" id="dob" placeholder="Enter your Email">
+                            <input type="date" class="form-control form-control-sm" id="dob" placeholder="Enter your Email" >
                         </div>
                         <label for="" class=" form-check-inline">Gender</label>
                         <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male" >
                         <label class="form-check-label" for="inlineRadio1">Male</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female" >
                         <label class="form-check-label" for="inlineRadio2">Female</label>
                       </div>
 
 
                         <div class="mb-2">
                             <label for="signup-password" class="form-label">Password</label>
-                            <input type="password" class="form-control form-control-sm" id="signup-password"
+                            <input type="password" class="form-control form-control-sm" id="signup-password "
                                 placeholder="Enter your Password">
                         </div>
                         <div class="mb-2">
                             <label for="signup-confirm-password" class="form-label">Password</label>
-                            <input type="password" class="form-control form-control-sm" id="signup-confirm-password"
+                            <input type="password" class="form-control form-control-sm" id="signup-confirm-password "
                                 placeholder="confirm your Password">
                         </div>
                         <button class="btn btn-success my-3" id="signup-btn" >Sign Up</button>
 
                     </form>
-                   
+                    <p class="signup_click my-4 fs-5">I have already an Account !
+                        
+                    <span id="signin_link">Sign In</span>
+                    </p>
                     <!-- /sign up form end -->
                 </div>
 

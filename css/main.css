@@ -5,11 +5,12 @@
 
 
 :root{
-    --color-main: #383D93;
+    --color-main: rgb(56, 61, 147);
     --color-main-s: rgba(219, 205, 249, 0.859);
     --color-title: #2D3134;
     --color-primary: #FFFFFF;
     --color-yellow: #DEF587;
+    --color-bg-light: rgba(0, 0, 0, 0.096);
     --color-orange: #FE7600;
     --color-light-black:#F6F7FB;
     --font-secondary: 'Roboto', sans-serif;
@@ -397,11 +398,18 @@ margin-left: -2rem;
     height: 80%;
     opacity: 0.9;
   }
+  #signin-title img{
+    max-width: 80%;
+
+  } 
+  
   .main .main-box #signup-box {
     font-size: 0.8em;
   }
   .main .main-box #signup-box h2 {
     font-size: 2rem;
+    color: var(--color-main);
+    font-weight: 600;
   }
   .main .main-box .title-box {
     color: var(--color-light-black);
@@ -411,14 +419,19 @@ margin-left: -2rem;
   }
   .main .main-box .title-box h2, .main .main-box .title-box h4 {
     font-family: "Eczar", serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    font-weight:700;
   }
   .main .main-box .title-box h4 {
-    font-size: 2.7rem;
+    font-size: 2rem;
+    color: var(--color-orange);
   }
   .main .main-box .title-box p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .main .main-box .title-box #signin-title{
+    /* background: linear-gradient(to bottom,rgba(56, 61, 147,0.5),rgba(56, 61, 147,0.5)),url(../images/signin.jfif) no-repeat center; */
   }
   .main .main-box .title-box #signp-title h2 {
     font-size: 2rem;
@@ -430,7 +443,7 @@ margin-left: -2rem;
     font-size: 1rem;
   }
   .main .main-box .form-box {
-    background: var(--color-light-black);  
+    background: var(--color-bg-light);  
     padding: 2rem 4rem;
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
@@ -439,26 +452,40 @@ margin-left: -2rem;
     font-family: "Eczar", serif;
     font-size: 3rem;
     text-align: center;
+    color: var(--color-main);
+    font-weight: 600;
+    /* background: #000; */
   }
   .main .main-box .form-box .forget {
     cursor: pointer;
-    color: #0ee73d;
+    color: var(--color-orange);
     letter-spacing: 0.3rem;
     text-decoration: underline;
   }
   .main .main-box .form-box .btn {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    background: var(--color-orange);
+    border: none;
   }
   .main .main-box .form-box .signup_click span {
-    color: #0ee73d;
-    font-weight: 500;
+    color: var(--color-orange);
+    font-weight: 700;
     cursor: pointer;
     text-decoration: underline;
   }
   .main .main-box .form-box #signup-btn {
     width: 100%;
     border-radius: 3rem;
+    color: var(--color-primary);
+    background: var(--color-orange);
+    border: none;
+    font-weight: 500;
   }
+    .main .main-box .form-box #signup-btn:hover,#signin-btn:hover{
+      background: var(--color-main);
+
+    }
   
   .profile-main-container .card-container {
     padding: 1rem;
@@ -524,7 +551,7 @@ margin-left: -2rem;
   /* background: fuchsia; */
 }
 .contact-box{
-  background: rgba(0, 0, 0, 0.096);
+  background: var(--color-bg-light);
 
 }
 

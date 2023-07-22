@@ -10,12 +10,13 @@ let signup_confirm_password = document.querySelector('#signup-confirm-password')
 let signup_btn = document.querySelector('#signup-btn');
 let signin_btn = document.querySelector('#signin-btn');
 let signup_link = document.querySelector('#signup_link');
+let signin_link = document.querySelector('#signin_link');
 let form_box = document.querySelector('.form-box');
 let title_box = document.querySelector('.title-box');
 
 
 signup_btn.addEventListener('click', function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     // if(inlineRadio1.checked){
 
     // }
@@ -109,10 +110,28 @@ signup_link.addEventListener('click',function(e){
         
 });
 
+signin_link.addEventListener('click',function(e){
+    // signin_title.classList.toggle('d-block');
+    // signup_title.classList.toggle('d-none');
+    title_box.classList.toggle('order-1');
+    title_box.classList.replace('rounded-end-5','rounded-start-5')
+    form_box.classList.replace('rounded-start-5','rounded-end-5')
+
+
+
+    inner.forEach(function(element) {
+        element.classList.toggle('d-none');
+        // element.classList.toggle('d-none');
+    })
+
+    
+    
+});
+
 // SIGN IN BUTTON CLICK
 
      signin_btn.addEventListener('click',function(e){
-        e.preventDefault();
+        // e.preventDefault();
 
         let signin_email=document.querySelector('#signin-email');
         let signin_password=document.querySelector('#signin-password');
@@ -121,7 +140,7 @@ signup_link.addEventListener('click',function(e){
         
 
         let user_storage = localStorage.getItem('user_storages'); 
-        
+        if(user_storage !== null)
         let user_list = JSON.parse(user_storage);
         let login_user;
 
