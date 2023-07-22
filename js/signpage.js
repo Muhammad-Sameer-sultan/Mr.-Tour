@@ -16,10 +16,7 @@ let title_box = document.querySelector('.title-box');
 
 
 signup_btn.addEventListener('click', function (e) {
-    // e.preventDefault();
-    // if(inlineRadio1.checked){
-
-    // }
+    console.log(signup_password)
     let gender;
     inlineRadio1.checked ? gender = "Male" : gender = "Female";
     let new_user = {
@@ -140,15 +137,21 @@ signin_link.addEventListener('click',function(e){
         
 
         let user_storage = localStorage.getItem('user_storages'); 
-        if(user_storage !== null)
-        let user_list = JSON.parse(user_storage);
-        let login_user;
+        let crediential_check;
+        if(user_storage !== null){
 
-        let crediential_check= user_list.find(userfind=>
-            {
-                login_user=userfind;
-                return userfind.user_email===signin_email.value && userfind.user_passwod===signin_password.value;   
-            })
+            let user_list = JSON.parse(user_storage);
+            let login_user;
+            
+             crediential_check= user_list.find(userfind=>
+                {
+                    login_user=userfind;
+                    return userfind.user_email===signin_email.value && userfind.user_passwod===signin_password.value;   
+                })
+            }
+            else{
+                crediential_check===false;
+            }
             
             if(crediential_check){
 console.log(login_user);
