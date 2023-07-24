@@ -128,7 +128,7 @@ signin_link.addEventListener('click',function(e){
 // SIGN IN BUTTON CLICK
 
      signin_btn.addEventListener('click',function(e){
-        // e.preventDefault();
+        e.preventDefault();
 
         let signin_email=document.querySelector('#signin-email');
         let signin_password=document.querySelector('#signin-password');
@@ -137,11 +137,12 @@ signin_link.addEventListener('click',function(e){
         
 
         let user_storage = localStorage.getItem('user_storages'); 
+        // console.log(user_storage);
         let crediential_check;
+        let login_user;
         if(user_storage !== null){
 
             let user_list = JSON.parse(user_storage);
-            let login_user;
             
              crediential_check= user_list.find(userfind=>
                 {
@@ -154,7 +155,7 @@ signin_link.addEventListener('click',function(e){
             }
             
             if(crediential_check){
-console.log(login_user);
+// console.log(login_user);
                 localStorage.setItem('login_storage',JSON.stringify(login_user));
                 window.location.href='../index.html';
                 // user_icon_name.innerHTML=login_user.user_name;

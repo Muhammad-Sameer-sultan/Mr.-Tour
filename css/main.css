@@ -228,8 +228,9 @@ border-radius: 1rem;
   padding-left: .5rem;
 }
 .featured .card-click{
-  height: 100%;
+  
   position: relative;
+  /* max-height: 370px; */
 }
 
 /* /banner section landing page end */
@@ -237,6 +238,7 @@ border-radius: 1rem;
 /* feature section start*/
 .featured .card {
   height: 100%;
+  /* max-height: 370px; */
   margin-right: 1.5rem; /* Adjust this value as needed */
 }
 
@@ -327,7 +329,7 @@ margin-left: -2rem;
 }
 
 
-.reshedule-btn:hover{
+.reshedule-btn:hover,.discover-btn:hover,.search-btn:hover{
   color: var(--color-primary);
   box-shadow: 0.3rem 1rem 0 var(--color-light-black);
   background-color: var(--color-orange);
